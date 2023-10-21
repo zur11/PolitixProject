@@ -1,3 +1,13 @@
-[gd_scene format=3 uid="uid://cjv5qwgf8ud4o"]
+[gd_scene load_steps=3 format=3 uid="uid://cjv5qwgf8ud4o"]
 
-[node name="Main" type="Node2D"]
+[ext_resource type="Script" path="res://global_systems/scene_manager_system/scene_container/scene_container.gd" id="1_8f5lq"]
+[ext_resource type="PackedScene" uid="uid://b1r0rgywl4gyw" path="res://screens/game_screen/game_screen.tscn" id="2_tygrr"]
+
+[node name="Main" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+
+[node name="ScreenContainer" type="Node2D" parent="."]
+script = ExtResource("1_8f5lq")
+
+[node name="GameScreen" parent="ScreenContainer" instance=ExtResource("2_tygrr")]
