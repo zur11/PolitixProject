@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="Party" load_steps=2 format=3 uid="uid://4ehp068tbksn"]
+
+[ext_resource type="Script" path="res://data/party/party.gd" id="1_ura10"]
+
+[resource]
+script = ExtResource("1_ura10")
+party_name = "SDP"
+party_color = "blue"

@@ -1,0 +1,160 @@
+[gd_scene load_steps=12 format=3 uid="uid://chqdrguprftkg"]
+
+[ext_resource type="Texture2D" uid="uid://cem1aa3okchhh" path="res://game_objects/test_emitter/assets/cuerpo 2.png" id="1_batcp"]
+[ext_resource type="Script" path="res://game_objects/test_emitter/test_emitter.gd" id="1_ek0q1"]
+[ext_resource type="Texture2D" uid="uid://c3b13ny5657wa" path="res://game_objects/test_emitter/assets/cabeza 2.png" id="2_svd2d"]
+[ext_resource type="Texture2D" uid="uid://kmvkeslej20m" path="res://game_objects/test_emitter/assets/cinturon 2.png" id="3_hx07b"]
+[ext_resource type="Texture2D" uid="uid://bcv2smsdas1b7" path="res://game_objects/test_emitter/assets/pierna iz 2.png" id="4_xnsf3"]
+[ext_resource type="Texture2D" uid="uid://c8p6sm481mfx" path="res://game_objects/test_emitter/assets/pierna d 2.png" id="5_drpda"]
+[ext_resource type="Texture2D" uid="uid://b276epcvhivyg" path="res://game_objects/test_emitter/assets/maleta.png" id="6_yu52f"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_tgj2p"]
+size = Vector2(58, 82)
+
+[sub_resource type="Animation" id="Animation_ftl46"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Textures/Body:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Textures/Body/Head:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+
+[sub_resource type="Animation" id="Animation_hud2o"]
+resource_name = "_idle"
+length = 2.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Textures/Body:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0.2, 0.7, 1.7),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [0.00030683, 0.10472, -0.10472]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Textures/Body/Head:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.5, 1.5),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [0.0, 0.115845, -0.115192]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Textures/Waist/LeftLeg:rotation")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0.5, 0.8, 1.3),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [0.0, 0.22139, 0.0]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Textures/Waist/RightLeg:rotation")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0.3, 1.5, 1.8),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [0.0, 0.0, -0.221657]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Textures/Briefcase:rotation")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0.3, 0.8, 1.5),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [0.0, 0.260291, 0.0]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_fqgpl"]
+_data = {
+"RESET": SubResource("Animation_ftl46"),
+"_idle": SubResource("Animation_hud2o")
+}
+
+[node name="TestEmitter" type="CharacterBody2D"]
+script = ExtResource("1_ek0q1")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-2, 1)
+shape = SubResource("RectangleShape2D_tgj2p")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_fqgpl")
+}
+
+[node name="Shadow" type="Polygon2D" parent="."]
+modulate = Color(1, 1, 1, 0.235294)
+color = Color(0, 0, 0, 1)
+polygon = PackedVector2Array(-11, 26, -18, 29, -19, 32, -18, 36, -13, 38, -4, 39, 4, 39, 13, 38, 18, 36, 19, 32, 18, 29, 11, 26, 0, 25)
+
+[node name="Textures" type="Node2D" parent="."]
+
+[node name="Body" type="Sprite2D" parent="Textures"]
+position = Vector2(0, 7)
+texture = ExtResource("1_batcp")
+offset = Vector2(0, -7)
+
+[node name="Head" type="Sprite2D" parent="Textures/Body"]
+show_behind_parent = true
+position = Vector2(0, -22)
+texture = ExtResource("2_svd2d")
+offset = Vector2(1, -9)
+
+[node name="Waist" type="Sprite2D" parent="Textures"]
+position = Vector2(1, 14)
+texture = ExtResource("3_hx07b")
+
+[node name="LeftLeg" type="Sprite2D" parent="Textures/Waist"]
+position = Vector2(-6, 3)
+texture = ExtResource("4_xnsf3")
+offset = Vector2(0, 7)
+
+[node name="RightLeg" type="Sprite2D" parent="Textures/Waist"]
+position = Vector2(4, 3)
+rotation = -0.132994
+texture = ExtResource("5_drpda")
+offset = Vector2(1, 7)
+
+[node name="Briefcase" type="Sprite2D" parent="Textures"]
+position = Vector2(-10, 2)
+texture = ExtResource("6_yu52f")
+offset = Vector2(-1, 10)

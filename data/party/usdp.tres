@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="Party" load_steps=2 format=3 uid="uid://dlilmhvydse01"]
+
+[ext_resource type="Script" path="res://data/party/party.gd" id="1_fiudw"]
+
+[resource]
+script = ExtResource("1_fiudw")
+party_name = "USDP"
+party_color = "red"

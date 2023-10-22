@@ -1,7 +1,585 @@
-[gd_scene load_steps=2 format=3 uid="uid://de5wntxn5kviy"]
+[gd_scene load_steps=3 format=3 uid="uid://de5wntxn5kviy"]
 
 [ext_resource type="Script" path="res://screens/game_screen/grid/grid.gd" id="1_ywd0a"]
+[ext_resource type="PackedScene" uid="uid://umx3gjxb2i53" path="res://screens/game_screen/grid/cell/cell.tscn" id="2_727vf"]
 
 [node name="Grid" type="GridContainer"]
-columns = 25
+theme_override_constants/v_separation = 3
+columns = 24
 script = ExtResource("1_ywd0a")
+
+[node name="Cell1" parent="." instance=ExtResource("2_727vf")]
+layout_mode = 2
+
+[node name="Cell2" parent="." instance=ExtResource("2_727vf")]
+layout_mode = 2
+
+[node name="Cell3" parent="." instance=ExtResource("2_727vf")]
+layout_mode = 2
+
+[node name="Cell4" parent="." instance=ExtResource("2_727vf")]
+layout_mode = 2
+
+[node name="Cell5" parent="." instance=ExtResource("2_727vf")]
+layout_mode = 2
+
+[node name="Cell6" parent="." instance=ExtResource("2_727vf")]
+layout_mode = 2
+
+[node name="Cell7" parent="." instance=ExtResource("2_727vf")]
+layout_mode = 2
+
+[node name="Cell8" parent="." instance=ExtResource("2_727vf")]
+layout_mode = 2
+
+[node name="Cell9" parent="." instance=ExtResource("2_727vf")]
+layout_mode = 2
+
+[node name="Cell10" parent="." instance=ExtResource("2_727vf")]
+layout_mode = 2
+
+[node name="Cell11" parent="." instance=ExtResource("2_727vf")]
+layout_mode = 2
+
+[node name="Cell12" parent="." instance=ExtResource("2_727vf")]
+layout_mode = 2
+
+[node name="Cell13" parent="." instance=ExtResource("2_727vf")]
+layout_mode = 2
+
+[node name="Cell14" parent="." instance=ExtResource("2_727vf")]
+layout_mode = 2
+
+[node name="Cell15" parent="." instance=ExtResource("2_727vf")]
+layout_mode = 2
+
+[node name="Cell16" parent="." instance=ExtResource("2_727vf")]
+layout_mode = 2
+
+[node name="Cell17" parent="." instance=ExtResource("2_727vf")]
+layout_mode = 2
+
+[node name="Cell18" parent="." instance=ExtResource("2_727vf")]
+layout_mode = 2
+
+[node name="Cell19" parent="." instance=ExtResource("2_727vf")]
+layout_mode = 2
+
+[node name="Cell20" parent="." instance=ExtResource("2_727vf")]
+layout_mode = 2
+
+[node name="Cell21" parent="." instance=ExtResource("2_727vf")]
+layout_mode = 2
+
+[node name="Cell22" parent="." instance=ExtResource("2_727vf")]
+layout_mode = 2
+
+[node name="Cell23" parent="." instance=ExtResource("2_727vf")]
+layout_mode = 2
+
+[node name="Cell24" parent="." instance=ExtResource("2_727vf")]
+layout_mode = 2
+
+[node name="Cell25" parent="." instance=ExtResource("2_727vf")]
+layout_mode = 2
+
+[node name="Cell26" parent="." instance=ExtResource("2_727vf")]
+layout_mode = 2
+
+[node name="Cell27" parent="." instance=ExtResource("2_727vf")]
+layout_mode = 2
+
+[node name="Cell28" parent="." instance=ExtResource("2_727vf")]
+layout_mode = 2
+
+[node name="Cell29" parent="." instance=ExtResource("2_727vf")]
+layout_mode = 2
+
+[node name="Cell30" parent="." instance=ExtResource("2_727vf")]
+layout_mode = 2
+
+[node name="Cell31" parent="." instance=ExtResource("2_727vf")]
+layout_mode = 2
+
+[node name="Cell32" parent="." instance=ExtResource("2_727vf")]
+layout_mode = 2
+
+[node name="Cell33" parent="." instance=ExtResource("2_727vf")]
+layout_mode = 2
+
+[node name="Cell34" parent="." instance=ExtResource("2_727vf")]
+layout_mode = 2
+
+[node name="Cell35" parent="." instance=ExtResource("2_727vf")]
+layout_mode = 2
+
+[node name="Cell36" parent="." instance=ExtResource("2_727vf")]
+layout_mode = 2
+
+[node name="Cell37" parent="." instance=ExtResource("2_727vf")]
+layout_mode = 2
+
+[node name="Cell38" parent="." instance=ExtResource("2_727vf")]
+layout_mode = 2
+
+[node name="Cell39" parent="." instance=ExtResource("2_727vf")]
+layout_mode = 2
+
+[node name="Cell40" parent="." instance=ExtResource("2_727vf")]
+layout_mode = 2
+
+[node name="Cell41" parent="." instance=ExtResource("2_727vf")]
+layout_mode = 2
+
+[node name="Cell42" parent="." instance=ExtResource("2_727vf")]
+layout_mode = 2
+
+[node name="Cell43" parent="." instance=ExtResource("2_727vf")]
+layout_mode = 2
+
+[node name="Cell44" parent="." instance=ExtResource("2_727vf")]
+layout_mode = 2
+
+[node name="Cell45" parent="." instance=ExtResource("2_727vf")]
+layout_mode = 2
+
+[node name="Cell46" parent="." instance=ExtResource("2_727vf")]
+layout_mode = 2
+
+[node name="Cell47" parent="." instance=ExtResource("2_727vf")]
+layout_mode = 2
+
+[node name="Cell48" parent="." instance=ExtResource("2_727vf")]
+layout_mode = 2
+
+[node name="Cell49" parent="." instance=ExtResource("2_727vf")]
+layout_mode = 2
+
+[node name="Cell50" parent="." instance=ExtResource("2_727vf")]
+layout_mode = 2
+
+[node name="Cell51" parent="." instance=ExtResource("2_727vf")]
+layout_mode = 2
+
+[node name="Cell52" parent="." instance=ExtResource("2_727vf")]
+layout_mode = 2
+
+[node name="Cell53" parent="." instance=ExtResource("2_727vf")]
+layout_mode = 2
+
+[node name="Cell54" parent="." instance=ExtResource("2_727vf")]
+layout_mode = 2
+
+[node name="Cell55" parent="." instance=ExtResource("2_727vf")]
+layout_mode = 2
+
+[node name="Cell56" parent="." instance=ExtResource("2_727vf")]
+layout_mode = 2
+
+[node name="Cell57" parent="." instance=ExtResource("2_727vf")]
+layout_mode = 2
+
+[node name="Cell58" parent="." instance=ExtResource("2_727vf")]
+layout_mode = 2
+
+[node name="Cell59" parent="." instance=ExtResource("2_727vf")]
+layout_mode = 2
+
+[node name="Cell60" parent="." instance=ExtResource("2_727vf")]
+layout_mode = 2
+
+[node name="Cell61" parent="." instance=ExtResource("2_727vf")]
+layout_mode = 2
+
+[node name="Cell62" parent="." instance=ExtResource("2_727vf")]
+layout_mode = 2
+
+[node name="Cell63" parent="." instance=ExtResource("2_727vf")]
+layout_mode = 2
+
+[node name="Cell64" parent="." instance=ExtResource("2_727vf")]
+layout_mode = 2
+
+[node name="Cell65" parent="." instance=ExtResource("2_727vf")]
+layout_mode = 2
+
+[node name="Cell66" parent="." instance=ExtResource("2_727vf")]
+layout_mode = 2
+
+[node name="Cell67" parent="." instance=ExtResource("2_727vf")]
+layout_mode = 2
+
+[node name="Cell68" parent="." instance=ExtResource("2_727vf")]
+layout_mode = 2
+
+[node name="Cell69" parent="." instance=ExtResource("2_727vf")]
+layout_mode = 2
+
+[node name="Cell70" parent="." instance=ExtResource("2_727vf")]
+layout_mode = 2
+
+[node name="Cell71" parent="." instance=ExtResource("2_727vf")]
+layout_mode = 2
+
+[node name="Cell72" parent="." instance=ExtResource("2_727vf")]
+layout_mode = 2
+
+[node name="Cell73" parent="." instance=ExtResource("2_727vf")]
+layout_mode = 2
+
+[node name="Cell74" parent="." instance=ExtResource("2_727vf")]
+layout_mode = 2
+
+[node name="Cell75" parent="." instance=ExtResource("2_727vf")]
+layout_mode = 2
+
+[node name="Cell76" parent="." instance=ExtResource("2_727vf")]
+layout_mode = 2
+
+[node name="Cell77" parent="." instance=ExtResource("2_727vf")]
+layout_mode = 2
+
+[node name="Cell78" parent="." instance=ExtResource("2_727vf")]
+layout_mode = 2
+
+[node name="Cell79" parent="." instance=ExtResource("2_727vf")]
+layout_mode = 2
+
+[node name="Cell80" parent="." instance=ExtResource("2_727vf")]
+layout_mode = 2
+
+[node name="Cell81" parent="." instance=ExtResource("2_727vf")]
+layout_mode = 2
+
+[node name="Cell82" parent="." instance=ExtResource("2_727vf")]
+layout_mode = 2
+
+[node name="Cell83" parent="." instance=ExtResource("2_727vf")]
+layout_mode = 2
+
+[node name="Cell84" parent="." instance=ExtResource("2_727vf")]
+layout_mode = 2
+
+[node name="Cell85" parent="." instance=ExtResource("2_727vf")]
+layout_mode = 2
+
+[node name="Cell86" parent="." instance=ExtResource("2_727vf")]
+layout_mode = 2
+
+[node name="Cell87" parent="." instance=ExtResource("2_727vf")]
+layout_mode = 2
+
+[node name="Cell88" parent="." instance=ExtResource("2_727vf")]
+layout_mode = 2
+
+[node name="Cell89" parent="." instance=ExtResource("2_727vf")]
+layout_mode = 2
+
+[node name="Cell90" parent="." instance=ExtResource("2_727vf")]
+layout_mode = 2
+
+[node name="Cell91" parent="." instance=ExtResource("2_727vf")]
+layout_mode = 2
+
+[node name="Cell92" parent="." instance=ExtResource("2_727vf")]
+layout_mode = 2
+
+[node name="Cell93" parent="." instance=ExtResource("2_727vf")]
+layout_mode = 2
+
+[node name="Cell94" parent="." instance=ExtResource("2_727vf")]
+layout_mode = 2
+
+[node name="Cell95" parent="." instance=ExtResource("2_727vf")]
+layout_mode = 2
+
+[node name="Cell96" parent="." instance=ExtResource("2_727vf")]
+layout_mode = 2
+
+[node name="Cell97" parent="." instance=ExtResource("2_727vf")]
+layout_mode = 2
+
+[node name="Cell98" parent="." instance=ExtResource("2_727vf")]
+layout_mode = 2
+
+[node name="Cell99" parent="." instance=ExtResource("2_727vf")]
+layout_mode = 2
+
+[node name="Cell100" parent="." instance=ExtResource("2_727vf")]
+layout_mode = 2
+
+[node name="Cell101" parent="." instance=ExtResource("2_727vf")]
+layout_mode = 2
+
+[node name="Cell102" parent="." instance=ExtResource("2_727vf")]
+layout_mode = 2
+
+[node name="Cell103" parent="." instance=ExtResource("2_727vf")]
+layout_mode = 2
+
+[node name="Cell104" parent="." instance=ExtResource("2_727vf")]
+layout_mode = 2
+
+[node name="Cell105" parent="." instance=ExtResource("2_727vf")]
+layout_mode = 2
+
+[node name="Cell106" parent="." instance=ExtResource("2_727vf")]
+layout_mode = 2
+
+[node name="Cell107" parent="." instance=ExtResource("2_727vf")]
+layout_mode = 2
+
+[node name="Cell108" parent="." instance=ExtResource("2_727vf")]
+layout_mode = 2
+
+[node name="Cell109" parent="." instance=ExtResource("2_727vf")]
+layout_mode = 2
+
+[node name="Cell110" parent="." instance=ExtResource("2_727vf")]
+layout_mode = 2
+
+[node name="Cell111" parent="." instance=ExtResource("2_727vf")]
+layout_mode = 2
+
+[node name="Cell112" parent="." instance=ExtResource("2_727vf")]
+layout_mode = 2
+
+[node name="Cell113" parent="." instance=ExtResource("2_727vf")]
+layout_mode = 2
+
+[node name="Cell114" parent="." instance=ExtResource("2_727vf")]
+layout_mode = 2
+
+[node name="Cell115" parent="." instance=ExtResource("2_727vf")]
+layout_mode = 2
+
+[node name="Cell116" parent="." instance=ExtResource("2_727vf")]
+layout_mode = 2
+
+[node name="Cell117" parent="." instance=ExtResource("2_727vf")]
+layout_mode = 2
+
+[node name="Cell118" parent="." instance=ExtResource("2_727vf")]
+layout_mode = 2
+
+[node name="Cell119" parent="." instance=ExtResource("2_727vf")]
+layout_mode = 2
+
+[node name="Cell120" parent="." instance=ExtResource("2_727vf")]
+layout_mode = 2
+
+[node name="Cell121" parent="." instance=ExtResource("2_727vf")]
+layout_mode = 2
+
+[node name="Cell122" parent="." instance=ExtResource("2_727vf")]
+layout_mode = 2
+
+[node name="Cell123" parent="." instance=ExtResource("2_727vf")]
+layout_mode = 2
+
+[node name="Cell124" parent="." instance=ExtResource("2_727vf")]
+layout_mode = 2
+
+[node name="Cell125" parent="." instance=ExtResource("2_727vf")]
+layout_mode = 2
+
+[node name="Cell126" parent="." instance=ExtResource("2_727vf")]
+layout_mode = 2
+
+[node name="Cell127" parent="." instance=ExtResource("2_727vf")]
+layout_mode = 2
+
+[node name="Cell128" parent="." instance=ExtResource("2_727vf")]
+layout_mode = 2
+
+[node name="Cell129" parent="." instance=ExtResource("2_727vf")]
+layout_mode = 2
+
+[node name="Cell130" parent="." instance=ExtResource("2_727vf")]
+layout_mode = 2
+
+[node name="Cell131" parent="." instance=ExtResource("2_727vf")]
+layout_mode = 2
+
+[node name="Cell132" parent="." instance=ExtResource("2_727vf")]
+layout_mode = 2
+
+[node name="Cell133" parent="." instance=ExtResource("2_727vf")]
+layout_mode = 2
+
+[node name="Cell134" parent="." instance=ExtResource("2_727vf")]
+layout_mode = 2
+
+[node name="Cell135" parent="." instance=ExtResource("2_727vf")]
+layout_mode = 2
+
+[node name="Cell136" parent="." instance=ExtResource("2_727vf")]
+layout_mode = 2
+
+[node name="Cell137" parent="." instance=ExtResource("2_727vf")]
+layout_mode = 2
+
+[node name="Cell138" parent="." instance=ExtResource("2_727vf")]
+layout_mode = 2
+
+[node name="Cell139" parent="." instance=ExtResource("2_727vf")]
+layout_mode = 2
+
+[node name="Cell140" parent="." instance=ExtResource("2_727vf")]
+layout_mode = 2
+
+[node name="Cell141" parent="." instance=ExtResource("2_727vf")]
+layout_mode = 2
+
+[node name="Cell142" parent="." instance=ExtResource("2_727vf")]
+layout_mode = 2
+
+[node name="Cell143" parent="." instance=ExtResource("2_727vf")]
+layout_mode = 2
+
+[node name="Cell144" parent="." instance=ExtResource("2_727vf")]
+layout_mode = 2
+
+[node name="Cell145" parent="." instance=ExtResource("2_727vf")]
+layout_mode = 2
+
+[node name="Cell146" parent="." instance=ExtResource("2_727vf")]
+layout_mode = 2
+
+[node name="Cell147" parent="." instance=ExtResource("2_727vf")]
+layout_mode = 2
+
+[node name="Cell148" parent="." instance=ExtResource("2_727vf")]
+layout_mode = 2
+
+[node name="Cell149" parent="." instance=ExtResource("2_727vf")]
+layout_mode = 2
+
+[node name="Cell150" parent="." instance=ExtResource("2_727vf")]
+layout_mode = 2
+
+[node name="Cell151" parent="." instance=ExtResource("2_727vf")]
+layout_mode = 2
+
+[node name="Cell152" parent="." instance=ExtResource("2_727vf")]
+layout_mode = 2
+
+[node name="Cell153" parent="." instance=ExtResource("2_727vf")]
+layout_mode = 2
+
+[node name="Cell154" parent="." instance=ExtResource("2_727vf")]
+layout_mode = 2
+
+[node name="Cell155" parent="." instance=ExtResource("2_727vf")]
+layout_mode = 2
+
+[node name="Cell156" parent="." instance=ExtResource("2_727vf")]
+layout_mode = 2
+
+[node name="Cell157" parent="." instance=ExtResource("2_727vf")]
+layout_mode = 2
+
+[node name="Cell158" parent="." instance=ExtResource("2_727vf")]
+layout_mode = 2
+
+[node name="Cell159" parent="." instance=ExtResource("2_727vf")]
+layout_mode = 2
+
+[node name="Cell160" parent="." instance=ExtResource("2_727vf")]
+layout_mode = 2
+
+[node name="Cell161" parent="." instance=ExtResource("2_727vf")]
+layout_mode = 2
+
+[node name="Cell162" parent="." instance=ExtResource("2_727vf")]
+layout_mode = 2
+
+[node name="Cell163" parent="." instance=ExtResource("2_727vf")]
+layout_mode = 2
+
+[node name="Cell164" parent="." instance=ExtResource("2_727vf")]
+layout_mode = 2
+
+[node name="Cell165" parent="." instance=ExtResource("2_727vf")]
+layout_mode = 2
+
+[node name="Cell166" parent="." instance=ExtResource("2_727vf")]
+layout_mode = 2
+
+[node name="Cell167" parent="." instance=ExtResource("2_727vf")]
+layout_mode = 2
+
+[node name="Cell168" parent="." instance=ExtResource("2_727vf")]
+layout_mode = 2
+
+[node name="Cell169" parent="." instance=ExtResource("2_727vf")]
+layout_mode = 2
+
+[node name="Cell170" parent="." instance=ExtResource("2_727vf")]
+layout_mode = 2
+
+[node name="Cell171" parent="." instance=ExtResource("2_727vf")]
+layout_mode = 2
+
+[node name="Cell172" parent="." instance=ExtResource("2_727vf")]
+layout_mode = 2
+
+[node name="Cell173" parent="." instance=ExtResource("2_727vf")]
+layout_mode = 2
+
+[node name="Cell174" parent="." instance=ExtResource("2_727vf")]
+layout_mode = 2
+
+[node name="Cell175" parent="." instance=ExtResource("2_727vf")]
+layout_mode = 2
+
+[node name="Cell176" parent="." instance=ExtResource("2_727vf")]
+layout_mode = 2
+
+[node name="Cell177" parent="." instance=ExtResource("2_727vf")]
+layout_mode = 2
+
+[node name="Cell178" parent="." instance=ExtResource("2_727vf")]
+layout_mode = 2
+
+[node name="Cell179" parent="." instance=ExtResource("2_727vf")]
+layout_mode = 2
+
+[node name="Cell180" parent="." instance=ExtResource("2_727vf")]
+layout_mode = 2
+
+[node name="Cell181" parent="." instance=ExtResource("2_727vf")]
+layout_mode = 2
+
+[node name="Cell182" parent="." instance=ExtResource("2_727vf")]
+layout_mode = 2
+
+[node name="Cell183" parent="." instance=ExtResource("2_727vf")]
+layout_mode = 2
+
+[node name="Cell184" parent="." instance=ExtResource("2_727vf")]
+layout_mode = 2
+
+[node name="Cell185" parent="." instance=ExtResource("2_727vf")]
+layout_mode = 2
+
+[node name="Cell186" parent="." instance=ExtResource("2_727vf")]
+layout_mode = 2
+
+[node name="Cell187" parent="." instance=ExtResource("2_727vf")]
+layout_mode = 2
+
+[node name="Cell188" parent="." instance=ExtResource("2_727vf")]
+layout_mode = 2
+
+[node name="Cell189" parent="." instance=ExtResource("2_727vf")]
+layout_mode = 2
+
+[node name="Cell190" parent="." instance=ExtResource("2_727vf")]
+layout_mode = 2
+
+[node name="Cell191" parent="." instance=ExtResource("2_727vf")]
+layout_mode = 2
+
+[node name="Cell192" parent="." instance=ExtResource("2_727vf")]
+layout_mode = 2

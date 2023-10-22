@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Player" load_steps=3 format=3 uid="uid://82lvn6m65y7i"]
+
+[ext_resource type="Script" path="res://data/player/player.gd" id="1_ol6fi"]
+[ext_resource type="Resource" uid="uid://dlilmhvydse01" path="res://data/party/usdp.tres" id="1_tmmcn"]
+
+[resource]
+script = ExtResource("1_ol6fi")
+player_name = "player2"
+player_party = ExtResource("1_tmmcn")
