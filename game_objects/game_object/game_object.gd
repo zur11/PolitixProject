@@ -1,6 +1,9 @@
 class_name GameObject extends CharacterBody2D
 
+signal request_object_in_position(position: Vector2)
+
 var neigbors: Array[Neigbor]
+var grid_position: Vector2
 
 func send_message():
 	pass
@@ -8,7 +11,7 @@ func send_message():
 func analyze_recibed_messages():
 	pass
 
-func get_neigors():
+func set_neigbors():
 	pass
 
 class Neigbor:
