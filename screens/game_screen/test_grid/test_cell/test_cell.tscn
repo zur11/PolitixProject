@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://hfdaofp25v2f"]
+
+[ext_resource type="Script" path="res://screens/game_screen/test_grid/test_cell/test_cell.gd" id="1_ar25b"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2ksp3"]
+size = Vector2(58, 82)
+
+[node name="TestCell" type="TextureButton"]
+custom_minimum_size = Vector2(58, 82)
+script = ExtResource("1_ar25b")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(29, 41)
+shape = SubResource("RectangleShape2D_2ksp3")
+
+[connection signal="pressed" from="." to="." method="_on_pressed"]

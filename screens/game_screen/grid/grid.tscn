@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://de5wntxn5kviy"]
+
+[ext_resource type="Script" path="res://screens/game_screen/grid/grid.gd" id="1_ywd0a"]
+
+[node name="Grid" type="GridContainer"]
+columns = 25
+script = ExtResource("1_ywd0a")

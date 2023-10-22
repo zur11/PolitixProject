@@ -1,0 +1,40 @@
+[gd_scene load_steps=3 format=3 uid="uid://ckf2pqr5ume8x"]
+
+[ext_resource type="PackedScene" uid="uid://hfdaofp25v2f" path="res://screens/game_screen/test_grid/test_cell/test_cell.tscn" id="1_705u1"]
+[ext_resource type="Script" path="res://screens/game_screen/test_grid/test_grid.gd" id="1_np2qb"]
+
+[node name="TestGrid" type="GridContainer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+columns = 3
+script = ExtResource("1_np2qb")
+
+[node name="TestCell" parent="." instance=ExtResource("1_705u1")]
+layout_mode = 2
+
+[node name="TestCell2" parent="." instance=ExtResource("1_705u1")]
+layout_mode = 2
+
+[node name="TestCell3" parent="." instance=ExtResource("1_705u1")]
+layout_mode = 2
+
+[node name="TestCell4" parent="." instance=ExtResource("1_705u1")]
+layout_mode = 2
+
+[node name="TestCell5" parent="." instance=ExtResource("1_705u1")]
+layout_mode = 2
+
+[node name="TestCell6" parent="." instance=ExtResource("1_705u1")]
+layout_mode = 2
+
+[node name="TestCell7" parent="." instance=ExtResource("1_705u1")]
+layout_mode = 2
+
+[node name="TestCell8" parent="." instance=ExtResource("1_705u1")]
+layout_mode = 2
+
+[node name="TestCell9" parent="." instance=ExtResource("1_705u1")]
+layout_mode = 2
