@@ -1,19 +1,28 @@
 class_name GameObject extends CharacterBody2D
 
-signal request_object_in_position(position: Vector2)
+signal request_neighbors(grid_position: Vector2)
 
-var neigbors: Array[Neigbor]
+var neighbors: Array[Neighbor]
 var grid_position: Vector2
 
+var messages_to_send: Array[Message]
+
+func _ready():
+	add_to_group("game_objects")
+
 func send_message():
+	for message in messages_to_send:
+		for neighbor in neighbors:
+			if message.direction == neighbor.direction:
+				neighbor.game_object.recibe_message(message)
+
+func recibe_message(message: Message):
 	pass
-	
+
+
 func analyze_recibed_messages():
 	pass
 
-func set_neigbors():
-	pass
+func set_neigbors(n:Array[Neighbor]):
+	neighbors = n
 
-class Neigbor:
-	var direction: GlobalConstants.cardinal_points
-	var game_object: GameObject

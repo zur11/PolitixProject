@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://c746q3nh7u4ku"]
 
 [ext_resource type="Script" path="res://screens/test_screen/test_screen.gd" id="1_6budt"]
-[ext_resource type="PackedScene" uid="uid://dgx8noywhjkra" path="res://game_objects/propagator/citizen/citizen.tscn" id="2_vdvh8"]
+[ext_resource type="PackedScene" uid="uid://dgx8noywhjkra" path="res://game_objects/propagators/citizen/citizen.tscn" id="2_vdvh8"]
 
 [node name="TestScreen" type="Control"]
 layout_mode = 3

@@ -15,9 +15,9 @@ func _ready():
 
 func _process(_delta):
 	if first_turn_performed and second_turn_performed:
-		_make_turn_calculations()
 		first_turn_performed = false
 		second_turn_performed = false
+		_make_turn_calculations()
 		
 func _on_emitter_placed_in_grid():
 	if not first_turn_performed:
@@ -26,7 +26,7 @@ func _on_emitter_placed_in_grid():
 		second_turn_performed = true
 
 func _make_turn_calculations():
-	printt("Next turn")
+	get_tree().call_group("game_objects", "analyze_recibed_messages")
 
 func execute_player_turn():
 	pass

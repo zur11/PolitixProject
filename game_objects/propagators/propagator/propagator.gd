@@ -1,5 +1,6 @@
-extends CharacterBody2D
+class_name Propagator extends GameObject
 
 @onready var inputs: Inputs = get_node("Inputs") as Inputs
 
-var messages_to_send
+func analyze_recibed_messages():
+	messages_to_send = inputs.get_messages()
