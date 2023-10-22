@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://vrjxtfwtu2iw"
-path="res://.godot/imported/placeholder_citizen.png-78057c1adbe592bd46ffadd83e0aedff.ctex"
+path="res://.godot/imported/placeholder_citizen.png-a3005a643323648a83bec67c0d27e822.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://game_objects/propagator/citizen/placeholder_citizen.png"
-dest_files=["res://.godot/imported/placeholder_citizen.png-78057c1adbe592bd46ffadd83e0aedff.ctex"]
+source_file="res://game_objects/propagators/citizen/placeholder_citizen.png"
+dest_files=["res://.godot/imported/placeholder_citizen.png-a3005a643323648a83bec67c0d27e822.ctex"]
 
 [params]
 

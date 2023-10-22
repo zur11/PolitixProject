@@ -1,0 +1,7 @@
+[gd_resource type="Resource" script_class="Message" load_steps=2 format=3 uid="uid://dbanbgyiao1dv"]
+
+[ext_resource type="Script" path="res://game_objects/message/message.gd" id="1_bww84"]
+
+[resource]
+script = ExtResource("1_bww84")
+energy = 2

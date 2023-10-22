@@ -1,0 +1,19 @@
+[gd_scene load_steps=5 format=3 uid="uid://dgx8noywhjkra"]
+
+[ext_resource type="Script" path="res://game_objects/propagators/citizen/citizen.gd" id="1_ksc5m"]
+[ext_resource type="Texture2D" uid="uid://vrjxtfwtu2iw" path="res://game_objects/propagators/citizen/placeholder_citizen.png" id="2_fy37p"]
+[ext_resource type="PackedScene" uid="uid://b2xb3u47gx81v" path="res://game_objects/inputs/inputs.tscn" id="3_tbdkh"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_lbw2t"]
+height = 20.0
+
+[node name="Citizen" type="CharacterBody2D"]
+script = ExtResource("1_ksc5m")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_fy37p")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CapsuleShape2D_lbw2t")
+
+[node name="Inputs" parent="." instance=ExtResource("3_tbdkh")]
