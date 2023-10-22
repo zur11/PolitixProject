@@ -36,11 +36,11 @@ func _ready():
 	for cell in self.get_children() as Array[Cell]:
 		cell.empty_cell_pressed.connect(_on_empty_cell_pressed.bind(cell))
 		if cell.cell_occupant:
-			cell.cell_occupant.request_neigbors.connect(send_neighbors)
+			cell.cell_occupant.request_neighbors.connect(send_neighbors)
 	get_child(0).is_empty = true
 
 func _on_empty_cell_pressed(cell : Cell):
 	var test_emitter : CharacterBody2D = load("res://game_objects/test_emitter/test_emitter.tscn").instantiate()
 	cell.cell_occupant = test_emitter
-	cell.cell_occupant.request_neigbors.connect(send_neighbors)
+#	cell.cell_occupant.request_neigbors.connect(send_neighbors)
 	emitter_placed_in_grid.emit()
