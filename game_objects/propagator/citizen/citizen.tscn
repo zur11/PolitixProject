@@ -1,0 +1,281 @@
+[gd_scene load_steps=15 format=3 uid="uid://dgx8noywhjkra"]
+
+[ext_resource type="Script" path="res://game_objects/propagator/citizen/citizen.gd" id="1_u4mly"]
+[ext_resource type="Texture2D" uid="uid://vrjxtfwtu2iw" path="res://game_objects/propagator/citizen/placeholder_citizen.png" id="2_64olp"]
+[ext_resource type="PackedScene" uid="uid://4doudclw1dmc" path="res://game_objects/message/message_presenter.tscn" id="3_l2yr3"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_lbw2t"]
+height = 20.0
+
+[sub_resource type="Animation" id="Animation_f6i35"]
+resource_name = "send_message_N"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("message_presenter_N:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(0, -33), Vector2(2.08165e-12, -50)]
+}
+
+[sub_resource type="Animation" id="Animation_juce5"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("message_presenter_N:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, -33)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("message_presenter_E:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(23, -2)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("message_presenter_NE:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(25, -33)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("message_presenter_NW:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-23, -37)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("message_presenter_SE:position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(21, 33)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("message_presenter_S:position")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 33)]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("message_presenter_SW:position")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-21, 33)]
+}
+
+[sub_resource type="Animation" id="Animation_2qqdl"]
+resource_name = "send_message_NE"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("message_presenter_NE:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(25, -33), Vector2(40, -53)]
+}
+
+[sub_resource type="Animation" id="Animation_lsvy4"]
+resource_name = "send_message_NW"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("message_presenter_SE:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(21, 33), Vector2(43, 52)]
+}
+
+[sub_resource type="Animation" id="Animation_i2oni"]
+resource_name = "send_message_E"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("message_presenter_E:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(23, -2), Vector2(41, -1)]
+}
+
+[sub_resource type="Animation" id="Animation_mxf02"]
+resource_name = "send_message_W"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("message_presenter_N:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(0, -33), Vector2(2.08165e-12, -50)]
+}
+
+[sub_resource type="Animation" id="Animation_bwggw"]
+resource_name = "send_message_S"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("message_presenter_S:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(1, 33), Vector2(2, 55)]
+}
+
+[sub_resource type="Animation" id="Animation_fp0iv"]
+resource_name = "send_message_SE"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("message_presenter_N:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(0, -33), Vector2(2.08165e-12, -50)]
+}
+
+[sub_resource type="Animation" id="Animation_lmppc"]
+resource_name = "send_message_SW"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("message_presenter_SW:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(-21, 33), Vector2(-44, 53)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_7v4v0"]
+_data = {
+"RESET": SubResource("Animation_juce5"),
+"send_message_E": SubResource("Animation_i2oni"),
+"send_message_N": SubResource("Animation_f6i35"),
+"send_message_NE": SubResource("Animation_2qqdl"),
+"send_message_NW": SubResource("Animation_lsvy4"),
+"send_message_S": SubResource("Animation_bwggw"),
+"send_message_SE": SubResource("Animation_fp0iv"),
+"send_message_SW": SubResource("Animation_lmppc"),
+"send_message_W": SubResource("Animation_mxf02")
+}
+
+[node name="Citizen" type="CharacterBody2D"]
+script = ExtResource("1_u4mly")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_64olp")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CapsuleShape2D_lbw2t")
+
+[node name="PlaceholderCitizen" type="Sprite2D" parent="."]
+position = Vector2(56, 0)
+texture = ExtResource("2_64olp")
+
+[node name="PlaceholderCitizen2" type="Sprite2D" parent="."]
+position = Vector2(-1, -83)
+texture = ExtResource("2_64olp")
+
+[node name="PlaceholderCitizen3" type="Sprite2D" parent="."]
+position = Vector2(55, -84)
+texture = ExtResource("2_64olp")
+
+[node name="MessageSender" type="Node2D" parent="."]
+
+[node name="MessagePresenterN" parent="MessageSender" instance=ExtResource("3_l2yr3")]
+position = Vector2(0, -33)
+
+[node name="message_presenter_NE" parent="MessageSender" instance=ExtResource("3_l2yr3")]
+position = Vector2(25, -33)
+
+[node name="message_presenter_NW" parent="MessageSender" instance=ExtResource("3_l2yr3")]
+position = Vector2(-24, -34)
+
+[node name="message_presenter_E" parent="MessageSender" instance=ExtResource("3_l2yr3")]
+position = Vector2(23, -2)
+
+[node name="message_presenter_W" parent="MessageSender" instance=ExtResource("3_l2yr3")]
+position = Vector2(-22, -3)
+
+[node name="message_presenter_SE" parent="MessageSender" instance=ExtResource("3_l2yr3")]
+position = Vector2(21, 33)
+
+[node name="message_presenter_S" parent="MessageSender" instance=ExtResource("3_l2yr3")]
+position = Vector2(1, 33)
+
+[node name="message_presenter_SW" parent="MessageSender" instance=ExtResource("3_l2yr3")]
+position = Vector2(-21, 34)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="MessageSender"]
+root_node = NodePath("../..")
+libraries = {
+"": SubResource("AnimationLibrary_7v4v0")
+}

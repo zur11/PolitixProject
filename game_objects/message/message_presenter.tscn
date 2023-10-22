@@ -1,0 +1,25 @@
+[gd_scene load_steps=4 format=3 uid="uid://4doudclw1dmc"]
+
+[ext_resource type="Script" path="res://game_objects/message/message_presenter.gd" id="1_b15f0"]
+[ext_resource type="Texture2D" uid="uid://c0j3hqorhgxgd" path="res://game_objects/message/message_displayer_texture.png" id="2_n5x3j"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_oc5rk"]
+size = Vector2(33, 23)
+
+[node name="MessagePresenter" type="CharacterBody2D"]
+script = ExtResource("1_b15f0")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0.5, 0.5)
+shape = SubResource("RectangleShape2D_oc5rk")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_n5x3j")
+
+[node name="PropagationEnergyPresenter" type="Label" parent="."]
+offset_left = -4.0
+offset_top = -12.0
+offset_right = 6.0
+offset_bottom = 14.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "5"
